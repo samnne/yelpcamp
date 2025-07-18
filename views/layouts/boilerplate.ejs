@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs') %>
+  <body class="d-flex flex-column vh-100">
+    <%- include('../partials/navbar.ejs') %>
+
+    <main class="container">
+      <%- include('../partials/flash.ejs') %> <%- body %>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    <script src="/js/validateForm.js"></script>
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.min.js"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>
